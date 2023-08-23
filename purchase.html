@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <title>Purchase Items</title>
+</head>
+<body>
+  <header>
+    <h1>Purchase Items</h1>
+  </header>
+  <div class="items-container">
+    <div class="item">
+      <img src="C:\Users\nj934\Videos\pencil.jpg" alt="Pencil">
+      <h2>Pencil</h2>
+      <p>Price: $1</p>
+      <label for="pencil-quantity">Quantity:</label>
+      <input type="number" id="pencil-quantity" class="quantity-input" min="0">
+    </div>
+    <div class="item">
+      <img src="C:\Users\nj934\Videos\pen.jpeg" alt="Pen">
+      <h2>Pen</h2>
+      <p>Price: $2</p>
+      <label for="pen-quantity">Quantity:</label>
+      <input type="number" id="pen-quantity" class="quantity-input" min="0">
+    </div>
+    <div class="item">
+      <img src="C:\Users\nj934\Videos\eraser.jpg"alt="Eraser">
+      <h2>Eraser</h2>
+      <p>Price: $0.5</p>
+      <label for="eraser-quantity">Quantity:</label>
+      <input type="number" id="eraser-quantity" class="quantity-input" min="0">
+    </div>
+    <div class="total">
+      <h2>Total Amount:</h2>
+      <p id="total-amount">$0</p>
+      <button id="calculate-button">Calculate Total</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

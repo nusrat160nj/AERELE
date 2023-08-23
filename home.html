@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Namma Kadai</title>
+</head>
+<body>
+    <h1>Namma Kadai</h1>
+    <h2>Running Cash Balance: Rs.{{ balance }}</h2>
+
+    <h3>Purchase</h3>
+    <form action="/purchase" method="POST">
+        <select name="item_id">
+            {% for item in items %}
+            <option value="{{ item[0] }}">{{ item[1] }}</option>
+            {% endfor %}
+        </select>
+        <input type="number" name="quantity" placeholder="Quantity">
+        <input type="number" name="amount" placeholder="Amount">
+        <button type="submit">Add Purchase</button>
+    </form>
+
+    <h3>Sale</h3>
+    <form action="/sale" method="POST">
+        <select name="item_id">
+            {% for item in items %}
+            <option value="{{ item[0] }}">{{ item[1] }}</option>
+            {% endfor %}
+        </select>
+        <input type="number" name="quantity" placeholder="Quantity">
+        <input type="number" name="amount" placeholder="Amount">
+        <button type="submit">Add Sale</button>
+    </form>
+</body>
+</html>

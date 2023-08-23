@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style3.css">
+  <title>Inventory Management</title>
+</head>
+<body>
+  <header>
+    <h1>Inventory Management</h1>
+  </header>
+  <div class="inventory-container">
+    <div class="item">
+      <h2>Pencil</h2>
+      <label for="pencil-purchase">Purchase Amount:</label>
+      <input type="number" id="pencil-purchase" class="amount-input" step="0.01">
+      <label for="pencil-selling">Selling Amount:</label>
+      <input type="number" id="pencil-selling" class="amount-input" step="0.01">
+    </div>
+    <div class="item">
+      <h2>Pen</h2>
+      <label for="pen-purchase">Purchase Amount:</label>
+      <input type="number" id="pen-purchase" class="amount-input" step="0.01">
+      <label for="pen-selling">Selling Amount:</label>
+      <input type="number" id="pen-selling" class="amount-input" step="0.01">
+    </div>
+    <div class="item">
+      <h2>Eraser</h2>
+      <label for="eraser-purchase">Purchase Amount:</label>
+      <input type="number" id="eraser-purchase" class="amount-input" step="0.01">
+      <label for="eraser-selling">Selling Amount:</label>
+      <input type="number" id="eraser-selling" class="amount-input" step="0.01">
+    </div>
+    <div class="total">
+      <h2>Remaining Balance:</h2>
+      <p id="remaining-balance">$0</p>
+      <button id="calculate-button">Calculate Balance</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
